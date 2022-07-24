@@ -1,0 +1,15 @@
+default: --publish-quiet -p retry -p html -p bdd -p dev -p chrome_headless
+
+retry: --retry 2
+
+bdd: -f pretty
+dots: -f progress
+html: -f html -o logs/report.html
+
+dev: CONFIG=dev.yml
+homolog: CONFIG=homolog.yml
+
+firefox: BROWSER=firefox
+firefox_headless: BROWSER=fire_headless
+chrome: BROWSER=chrome
+chrome_headless: BROWSER=chrome_headless

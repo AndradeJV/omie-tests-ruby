@@ -1,0 +1,5 @@
+statusDesativado:
+  status: "DESATIVADO"
+
+statusAtivado:
+  status: "ATIVADO"
