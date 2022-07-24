@@ -6,6 +6,16 @@ class EditarPage
         find("th.text-center > a").click
     end
 
+    # Clicar em [ Deletar ]
+    def click_delete
+        find(".text-center button.btn.btn-danger").click
+    end
+
+    # Clicar em [ Excluir ] no modal de exclusão
+    def click_delete_category_delete
+        find(".custom-modal-footer .btn.btn-danger").click
+    end
+
     # Clicar em [ Cadastrar ] no modal de categoria
     def click_button_cadastrar_category
         find(".custom-modal-footer  input").click
